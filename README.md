@@ -1,0 +1,3 @@
+-- This script utilizes the notifications that appear at the bottom right of your screen to tell you when a player joins or leaves.
+-- Use loadstring: loadstring(game:HttpGet('https://gist.github.com/EthanMcBloxxer/01334158e22b0cf79d378f6fef196969/raw/57876f179b20e54f0f812143f6175adcef1e9b6b/join-logging.lua'))()
+local function b(c,b,a)game.StarterGui:SetCore("SendNotification",{Title=c;Text=b;Icon="";Duration=a})end game.Players.ChildAdded:Connect(function(a)if not pcall(function()b("Fucker Player Joined",""..a.Name.." has joined.",2.5)end)then end end)game.Players.ChildRemoved:Connect(function(a)if not pcall(function()b("Fucker Player Left",""..a.Name.." has left.",2.5)end)then end end)
